@@ -33,7 +33,7 @@ jobs:
           
       - name: Build, Test & Check Specs
         id: build-test
-        uses: fivetwenty-io/genesis-kit-test-action@0.0.2-a6
+        uses: fivetwenty-io/genesis-kit-test-action@0.0.2-a7
         with:
           kit_name: shield
           debug_mode: true
