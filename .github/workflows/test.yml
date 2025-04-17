@@ -35,7 +35,7 @@ jobs:
         id: build-test
         uses: fivetwenty-io/genesis-kit-test-action@0.0.2-a3
         with:
-          kit_name: your-kit-name
+          kit_name: shield
           version_bump: ${{ github.event.inputs.version_bump || 'patch' }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Additional configuration
