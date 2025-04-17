@@ -3,6 +3,10 @@ name: Release
 on:
   push:
     branches: ["release/**", "release/*"]
+  pull_request:
+    types:
+      - opened
+    branches: ["release/**", "release/*"]
   workflow_dispatch:
     inputs:
       version:
@@ -12,7 +16,6 @@ on:
         description: 'Mark as prerelease'
         type: boolean
         default: false
-
 jobs:
   release:
     runs-on: ubuntu-latest
