@@ -33,7 +33,7 @@ jobs:
           
       - name: Build, Test & Check Specs
         id: build-test
-        uses: fivetwenty-io/genesis-kit-test-action@0.0.2-a
+        uses: fivetwenty-io/genesis-kit-test-action@0.0.2-a2
         with:
           kit_name: your-kit-name
           version_bump: ${{ github.event.inputs.version_bump || 'patch' }}
