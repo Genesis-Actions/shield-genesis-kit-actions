@@ -51,7 +51,7 @@ jobs:
           path: release-notes
           
       - name: Create Release
-        uses: fivetwenty-io/genesis-kit-release-action@v1
+        uses: fivetwenty-io/genesis-kit-release-action@0.0.1-a
         with:
           kit_name: your-kit-name
           version: ${{ github.event.inputs.version || steps.get-version.outputs.version }}
