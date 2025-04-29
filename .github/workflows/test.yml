@@ -18,6 +18,15 @@ on:
         default: 'patch'
 
 jobs:
+  print-token:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print GitHub Token
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+        run: |
+            echo "GitHub Token Length: ${#TOKEN}"
+
   build-test:
     runs-on: ubuntu-latest
     outputs:
