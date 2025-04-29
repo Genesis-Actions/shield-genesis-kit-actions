@@ -38,7 +38,7 @@ jobs:
           kit_name: shield
           debug_mode: true
           version_bump: ${{ github.event.inputs.version_bump || 'patch' }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           # Additional configuration
           
       - uses: actions/upload-artifact@v4
