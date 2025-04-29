@@ -35,6 +35,9 @@ jobs:
       has_breaking_changes: ${{ steps.build-test.outputs.has_breaking_changes }}
       is_release_commit: ${{ steps.build-test.outputs.is_release_commit }}
       release_version: ${{ steps.build-test.outputs.release_version }}
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with:
